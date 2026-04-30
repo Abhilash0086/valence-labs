@@ -139,11 +139,16 @@ export default function App() {
     return () => window.removeEventListener('scroll', fn)
   }, [])
 
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
+
   return (
     <div className="app">
 
       {/* ── NAVBAR ── */}
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
         <a href="#home" className="nav-logo" onClick={() => setMenuOpen(false)}>
           <VLogo size={34} />
           <span className="logo-text"><em>VALENCE</em> LABS</span>
