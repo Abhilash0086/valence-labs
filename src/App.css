@@ -159,6 +159,12 @@
   border: none;
   cursor: pointer;
   padding: 4px;
+  position: relative;
+  z-index: 200;
+}
+
+.nav-backdrop {
+  display: none;
 }
 .hamburger span {
   display: block;
@@ -831,22 +837,31 @@
   .desktop-cta { display: none; }
   .hamburger { display: flex; }
 
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 150;
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
     bottom: 0;
-    width: min(320px, 85vw);
+    width: min(300px, 80vw);
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    background: rgba(4, 13, 26, 0.97);
+    background: rgba(4, 13, 26, 0.98);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 2rem;
     border-left: 1px solid var(--border);
     transition: right 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-    z-index: 99;
+    z-index: 175;
   }
   .nav-links.open { right: 0; }
   .nav-links a { font-size: 1.1rem; color: var(--text2); }

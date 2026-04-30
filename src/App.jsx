@@ -163,6 +163,8 @@ export default function App() {
         </button>
       </nav>
 
+      {menuOpen && <div className="nav-backdrop" onClick={() => setMenuOpen(false)} aria-hidden="true" />}
+
       {/* ── HERO ── */}
       <section className="hero" id="home">
         <NetworkCanvas />
