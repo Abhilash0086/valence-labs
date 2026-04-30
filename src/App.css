@@ -160,7 +160,7 @@
   cursor: pointer;
   padding: 4px;
   position: relative;
-  z-index: 200;
+  z-index: 30;
 }
 
 .nav-backdrop {
@@ -841,8 +841,8 @@
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 150;
+    background: rgba(4, 13, 26, 0.72);
+    z-index: 10;
   }
 
   .nav-links {
@@ -855,13 +855,12 @@
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    background: rgba(4, 13, 26, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 2rem;
-    border-left: 1px solid var(--border);
+    background: linear-gradient(160deg, rgba(10, 22, 50, 0.98) 0%, rgba(4, 13, 26, 0.99) 100%);
+    border-left: 1px solid rgba(0, 212, 255, 0.18);
+    box-shadow: -12px 0 50px rgba(30, 107, 240, 0.18);
+    padding: 2.5rem 2rem;
     transition: right 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-    z-index: 175;
+    z-index: 20;
   }
   .nav-links.open { right: 0; }
   .nav-links a { font-size: 1.1rem; color: var(--text2); }

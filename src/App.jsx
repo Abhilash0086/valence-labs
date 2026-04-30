@@ -161,9 +161,9 @@ export default function App() {
         <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(o => !o)} aria-label="Toggle menu">
           <span /><span /><span />
         </button>
-      </nav>
 
-      {menuOpen && <div className="nav-backdrop" onClick={() => setMenuOpen(false)} aria-hidden="true" />}
+        {menuOpen && <div className="nav-backdrop" onClick={() => setMenuOpen(false)} aria-hidden="true" />}
+      </nav>
 
       {/* ── HERO ── */}
       <section className="hero" id="home">
