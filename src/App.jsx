@@ -351,7 +351,7 @@ export default function App() {
             <a href="#contact">Contact</a>
             <a href="mailto:valencelabscbe@gmail.com">Email</a>
           </div>
-          <div className="footer-copy">© 2025 Valence Labs. All rights reserved.</div>
+          <div className="footer-copy">© 2026 Valence Labs. All rights reserved.</div>
         </div>
       </footer>
 
