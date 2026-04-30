@@ -305,11 +305,11 @@ export default function App() {
             <h2 className="section-title">Ready to Build<br /><span className="gradient-text">Something Great?</span></h2>
             <p className="contact-sub">Tell us what you need. We'll turn it into something remarkable.</p>
             <div className="contact-channels">
-              <a href="tel:+919489363839" className="contact-item">
+              <a href="tel:+919487626537" className="contact-item">
                 <PhoneIcon />
                 <div>
                   <span className="contact-item-label">Call us</span>
-                  <span className="contact-item-value">+91 9489363839</span>
+                  <span className="contact-item-value">+91 9487626537</span>
                 </div>
               </a>
               <a href="mailto:valencelabscbe@gmail.com" className="contact-item">
@@ -319,7 +319,7 @@ export default function App() {
                   <span className="contact-item-value">valencelabscbe@gmail.com</span>
                 </div>
               </a>
-              <a href="https://wa.me/919489363839" target="_blank" rel="noopener noreferrer" className="contact-item">
+              <a href="https://wa.me/919487626537" target="_blank" rel="noopener noreferrer" className="contact-item">
                 <WAIcon />
                 <div>
                   <span className="contact-item-label">WhatsApp</span>
@@ -329,7 +329,7 @@ export default function App() {
             </div>
             <div className="contact-ctas">
               <a href="mailto:valencelabscbe@gmail.com" className="btn-primary btn-lg">Send a Message</a>
-              <a href="https://wa.me/919489363839" target="_blank" rel="noopener noreferrer" className="btn-ghost btn-lg">WhatsApp Us →</a>
+              <a href="https://wa.me/919487626537" target="_blank" rel="noopener noreferrer" className="btn-ghost btn-lg">WhatsApp Us →</a>
             </div>
           </div>
         </div>
