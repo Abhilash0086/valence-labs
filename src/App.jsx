@@ -4,31 +4,16 @@ import './App.css'
 // TODO: Replace with your actual Fixora Vercel deployment URL
 const FIXORA_URL = 'https://fixora-repair-management-system.vercel.app'
 
-// ─── SVG Logo ────────────────────────────────────────────────────────────────
+// ─── Logo ─────────────────────────────────────────────────────────────────────
 function VLogo({ size = 40 }) {
   return (
-    <svg width={size} height={Math.round(size * 1.1)} viewBox="0 0 80 90" fill="none" aria-label="Valence Labs logo">
-      <defs>
-        <linearGradient id="vg" x1="0" y1="0" x2="80" y2="90" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#1e6bf0" />
-          <stop offset="100%" stopColor="#00d4ff" />
-        </linearGradient>
-      </defs>
-      <line x1="7" y1="7" x2="28" y2="38" stroke="url(#vg)" strokeWidth="2" strokeLinecap="round" />
-      <line x1="7" y1="7" x2="52" y2="38" stroke="url(#vg)" strokeWidth="1.4" strokeLinecap="round" opacity="0.45" />
-      <line x1="73" y1="7" x2="52" y2="38" stroke="url(#vg)" strokeWidth="2" strokeLinecap="round" />
-      <line x1="73" y1="7" x2="28" y2="38" stroke="url(#vg)" strokeWidth="1.4" strokeLinecap="round" opacity="0.45" />
-      <line x1="28" y1="38" x2="40" y2="58" stroke="url(#vg)" strokeWidth="2" strokeLinecap="round" />
-      <line x1="52" y1="38" x2="40" y2="58" stroke="url(#vg)" strokeWidth="2" strokeLinecap="round" />
-      <line x1="40" y1="58" x2="40" y2="83" stroke="url(#vg)" strokeWidth="2" strokeLinecap="round" />
-      <circle cx="7" cy="7" r="5" fill="#1e6bf0" />
-      <circle cx="73" cy="7" r="5" fill="#00d4ff" />
-      <circle cx="28" cy="38" r="3.5" fill="#1e6bf0" />
-      <circle cx="52" cy="38" r="3.5" fill="#4ba3f5" />
-      <circle cx="40" cy="58" r="5" fill="none" stroke="#00d4ff" strokeWidth="2" />
-      <circle cx="40" cy="58" r="2" fill="#00d4ff" />
-      <circle cx="40" cy="83" r="6" fill="#1e6bf0" />
-    </svg>
+    <img
+      src="/logo.svg"
+      width={size}
+      height={Math.round(size * 274 / 300)}
+      alt="Valence Labs"
+      style={{ display: 'block' }}
+    />
   )
 }
 
